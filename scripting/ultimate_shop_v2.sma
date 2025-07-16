@@ -169,7 +169,7 @@ public plugin_precache()
 	
 	new i, modelos[64]
 	
-	for(i = 0; i < sizeof(modelsplayers); i++)
+	for(i = 0; i <= modelCount; i++)
 	{
 		formatex(modelos, charsmax(modelos), "models/player/%s/%s.mdl", modelsplayers[i][model_name], modelsplayers[i][model_name])
 
@@ -181,7 +181,7 @@ public plugin_precache()
 
 	new h, hat_models[64]
 
-	for(h = 0; h < sizeof(hatmodels); h++)
+	for(h = 0; h <= trailCount; h++)
 	{
 		formatex(hat_models, charsmax(hat_models), "models/%s/%s.mdl", hatcarpeta, hatmodels[h][hat_name])
 
@@ -193,7 +193,7 @@ public plugin_precache()
 
 	new k, vmodels[64], pmodels[64]
 
-	for(k = 0; k < sizeof(knifemodels); k++)
+	for(k = 0; k <= knifeCount; k++)
 	{
 		formatex(vmodels, charsmax(vmodels), "models/%s/%s.mdl", knifecarpeta, knifemodels[k][knife_vname])
 		formatex(pmodels, charsmax(pmodels), "models/%s/%s.mdl", knifecarpeta, knifemodels[k][knife_pname])
